@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>maventest</groupId>
+        <artifactId>algorithms-native</artifactId>
+        <version>1.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>histogram-fit</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>histogram-fit-graal</module>
+        <module>histogram-fit-impl</module>
+    </modules>
+
+    <properties>
+        <graalvm.version>22.0.0</graalvm.version>
+        <lombok.version>1.18.10</lombok.version>
+        <jackson.version>2.13.1</jackson.version>
+        <junit.version>4.13.2</junit.version>
+        <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+        <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
+        <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+        <native.maven.plugin.version>0.9.7.1</native.maven.plugin.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>  
+
+</project>
